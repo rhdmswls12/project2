@@ -1,0 +1,47 @@
+body{
+  background:#282828;
+  margin:0;
+  color:white;
+}
+.nav-container{
+  display:flex;
+  justify-content:space-around;/*앞, 뒤, 요소들 사이에 여유공간*/
+  /*flex-direction:row;*/
+  align-items:center;
+  width:100%;
+  /*margin:0;
+  padding:0;*/
+  /*background-color:darkslategrey;*/
+  list-style-type:none;
+  /*position:fixed;
+  top:0;*/
+
+}
+.nav-item{
+  padding:15px;
+  cursor:pointer;
+}
+.nav-item a{/*nav-item 클래스 아래의 a요소 선택*/
+  font-size:20px;
+  color:#fff;
+  text-decoration:none;
+  position:relative;
+  padding:6px 12px;
+}
+.nav-item a::after{
+  content: "";
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:0;
+  height:2px;
+  background:#f1c40f;
+  transition:all .5s ease-out;
+}
+.nav-item a:hover::after{
+  width:100%;
+}
+header{
+  margin-top:80px;
+}
