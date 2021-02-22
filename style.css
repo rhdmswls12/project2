@@ -1,3 +1,8 @@
+
+hgroup{
+  padding-left:20px;
+  padding-top:10px;
+}
 body{
   background:#282828;
   margin:0;
@@ -5,13 +10,13 @@ body{
 }
 .container{
   margin:0 auto;
-  width:900px;
-  height:300px;
+  width:100%;
+  height:500px;
   overflow:hidden;
 }
 .img_wrap{
-  width:900px;
-  height:300px;
+  width:100%;
+  height:500px;
   position:absolute;
   overflow:hidden;
 }
@@ -23,9 +28,9 @@ body{
 }
 .rollimgs li{
   position:absolute;
-  width:900px;
-  height:300px;
-  left:900px;
+  width:100%;
+  height:500px;
+  left:1200px;
 }
 .rollimgs li img{
   width:100%;
@@ -36,14 +41,14 @@ body{
   transtion:left .7s ease-in-out,right .7s ease-in-out;
 }
 .rollimgs li.prevroll{
-  left: -900px;
+  left: -100%;
   transition:left .7s ease-in-out,right .7s ease-in-out;
 }
 .rollimgs.reverse li.prevroll{
   transition:none;
 }
 .rollimgs li.nextroll{
-  left:900px;
+  left:100%;
   display:block;
   transition:none;
 }
@@ -51,20 +56,13 @@ body{
   transition:left .7s ease-in-out,right .7s ease-in-out;
 }
 
-
 .nav-container{
   display:flex;
   justify-content:space-around;/*앞, 뒤, 요소들 사이에 여유공간*/
   /*flex-direction:row;*/
   align-items:center;
   width:100%;
-  /*margin:0;
-  padding:0;*/
-  /*background-color:darkslategrey;*/
   list-style-type:none;
-  /*position:fixed;
-  top:0;*/
-
 }
 .nav-item{
   padding:15px;
@@ -93,4 +91,73 @@ body{
 }
 header{
   margin-top:80px;
+}
+h2{
+  margin-top:50px;
+  text-align:center;
+}
+
+.banner-title{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+
+}
+.section1-inner{
+  float:left;
+  margin:30px;
+  margin-top:10px;
+  padding:10px;
+  cursor:pointer;
+  list-style-type:none;
+}
+.section1-inner a{
+  position:relative;
+  text-align:center;
+  text-decoration:none;
+  color:white;
+}
+
+
+.banner-photo-container{
+  display:flex;
+  padding-left:30px;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+}
+.banner-photo{
+  float:left;
+  margin:30px;
+
+}
+.banner-photo img{
+  position:relative;
+  width:200px;
+  height:200px;
+
+}
+
+
+.quick-menu{
+  display:flex;
+  justify-content:space-around;
+  background-color:#1F2328;
+  list-style:none;
+  align-items:center;
+}
+.quick-menu-item a{
+  float:left;
+  text-decoration:none;
+  text-align:center;
+  justify-content:space-around;
+  color:white;
+}
+.footer-body{
+  background-color:#2C323A;
+}
+.footer-bottom{
+  text-align:center;
+  background-color:#2C323A;
 }
