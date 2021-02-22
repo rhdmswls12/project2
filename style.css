@@ -3,6 +3,55 @@ body{
   margin:0;
   color:white;
 }
+.container{
+  margin:0 auto;
+  width:900px;
+  height:300px;
+  overflow:hidden;
+}
+.img_wrap{
+  width:900px;
+  height:300px;
+  position:absolute;
+  overflow:hidden;
+}
+/*롤링 이미지 UL*/
+.rollimgs{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.rollimgs li{
+  position:absolute;
+  width:900px;
+  height:300px;
+  left:900px;
+}
+.rollimgs li img{
+  width:100%;
+  height:100%;
+}
+.rollimgs li.currentroll{
+  left:0;
+  transtion:left .7s ease-in-out,right .7s ease-in-out;
+}
+.rollimgs li.prevroll{
+  left: -900px;
+  transition:left .7s ease-in-out,right .7s ease-in-out;
+}
+.rollimgs.reverse li.prevroll{
+  transition:none;
+}
+.rollimgs li.nextroll{
+  left:900px;
+  display:block;
+  transition:none;
+}
+.rollimgs.reverse li.nextroll{
+  transition:left .7s ease-in-out,right .7s ease-in-out;
+}
+
+
 .nav-container{
   display:flex;
   justify-content:space-around;/*앞, 뒤, 요소들 사이에 여유공간*/
