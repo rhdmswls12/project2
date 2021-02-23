@@ -105,28 +105,85 @@
           <div class="section1-banner-wrap">
             <div class="banner-title">
              <ul class="section1-inner">
-               <li class="section1-inner"><a href="">남쪽 끝 </a></li>
-               <li class="section1-inner"><a href="">제주의 정취</a></li>
-               <li class="section1-inner"><a href="">감성여행</a></li>
+               <li class="section1-inner"><a href="" onclick="toggleImg1()">남쪽 끝 </a></li>
+               <li class="section1-inner"><a href="" onclick="toggleImg2()">제주의 정취</a></li>
+               <li class="section1-inner"><a href="" onclick="toggleImg3()">감성여행</a></li>
              </ul>
             </div>
+            <script>
+              function toggleImg1(){
+                document.getElementById("img").src="flower1.jpg";
+                document.getElementById("img").src="flower2.jpg";
+                document.getElementById("img").src="flower3.jpg";
+              }
+              function toggleImg2(){
+                document.getElementById("img").src="jeju1.jpg";
+                document.getElementById("img").src="jeju2.jpg";
+                document.getElementById("img").src="jeju3.jpg";
+              }
+              function toggleImg3(){
+                document.getElementById("img").src="flower1.jpg";
+                document.getElementById("img").src="flower2.jpg";
+                document.getElementById("img").src="flower3.jpg";
+              }
+              </script>
             <div class="banner-photo-container">
               <div class="banner-photo">
-                <img src="flower1.jpg"></img>
+                <img id="img" src="flower1.jpg"></img>
               </div>
               <div class="banner-text">
               </div>
               <div class="banner-photo">
-                <img src="flower2.jpg"></img>
+                <img id="img" src="flower2.jpg"></img>
               </div>
               <div class="banner-text">
               </div>
               <div class="banner-photo">
-                <img src="flower3.jpg"></img>
+                <img id="img" src="flower3.jpg"></img>
               </div>
               <div class="banner-text">
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-section2">
+        <h2>제주 노을 명소</h2>
+        <div class="sunset">
+          <div class="sunset_wrap">
+            <div class="sunset_wrap_top">
+              <div class="sunset1">
+                <img class="sunset1_image" src="sunset1.jpg"></img>
+              <div class="sunset1_text">
+                <h3>신창 풍차 해안도로</h3>
+                <h4>풍차 어쩌구</h4>
+              </div>
+              </div>
+             <div class="sunset2">
+               <img class="sunset2_image" src="sunset2.jpg"></img>
+               <div class="sunset2_text">
+                 <h3>닭머르 해안길</h3>
+                 <h4>갈대와 어쩌구</h4>
+               </div>
+             </div>
+           </div>
+          <ul class="sunset_wrap_bottom">
+            <li><a href=""><img class="sunset3_image" src="sunset3.jpg"></img></a></li>
+            <div class="sunset3_text">
+              <h3>협재 해수욕장</h3>
+              <h4>바다가 어쩌구</h4>
+            </div>
+            <li><a href=""><img class="sunset4_image" src="sunset4.jpg"></img></a></li>
+            <div class="sunset4_text">
+              <h3>이호테우 해수욕장</h3>
+              <h4>말등대</h4>
+            </div>
+            <li><a href=""><img class="sunset5_image" src="sunset5.jpg"></img></a></li>
+            <div class="sunset5_text">
+              <h3>수월봉</h3>
+              <h4>오름</h4>
+            </div>
+          </ul>
 
           </div>
         </div>
