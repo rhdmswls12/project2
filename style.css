@@ -142,41 +142,60 @@ h2{
 
 
 .sunset{
+
   margin:150px;
 }
 .sunset1{
-
-}
-.sunset2{
-
+  display:inline-block;
 }
 .sunset1_image{
   float:left;
   width:800px;
   height:400px;
+  margin-bottom:35px;
+}
+.sunset1_text{
+  float:right;
+}
+.sunset2{
+  displaly:inline-block;
 }
 .sunset2_image{
   float:right;
   width:800px;
   height:400px;
+  margin-bottom:35px;
 }
+.sunset2_text{
+  float:left;
+}
+
 .sunset_wrap_bottom{
+
+
+
+}
+.sunset_wrap_inner{
   align-items:center;
+  text-align:center;
   list-style-type:none;
-  text-decoration:none;
 }
 .sunset3_image{
-  width:400px;
-  height:400px;
+
+  width:300px;
+  height:300px;
 }
 .sunset4_image{
-  width:400px;
-  height:400px;
+
+  width:300px;
+  height:300px;
 }
 .sunset5_image{
-  width:400px;
-  height:400px;
+
+  width:300px;
+  height:300px;
 }
+/*
 .quick-menu{
   display:flex;
   justify-content:space-around;
@@ -198,3 +217,4 @@ h2{
   text-align:center;
   background-color:#2C323A;
 }
+*/
