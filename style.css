@@ -8,6 +8,7 @@ body{
   margin:0;
   color:white;
 }
+
 .container{
   margin:0 auto;
   width:100%;
@@ -92,15 +93,14 @@ body{
 header{
   margin-top:80px;
 }
-.section1-title{
-
-  margin:50px;
+.section1-title h2{
+  margin:20px;
   text-align:center;
 }
-
-.section1{
-  margin:50px;
+.section1-wrap{
+  margin:200px;
 }
+
 .banner-title{
   display:flex;
   justify-content:space-around;
@@ -130,29 +130,61 @@ header{
   align-items:center;
   width:100%;
 }
-.banner-photo{
-  float:left;
-  margin:30px;
 
-}
-.banner-photo img{
-  position:relative;
+.banner-photo1 img{
+  float:left;
   width:300px;
   height:300px;
+  margin-left:auto;
+  margin-right:30px;
 }
-
-.section2-title{
-  margin:50px;
+.banner-photo2 img{
+  float:left;
+  width:300px;
+  height:300px;
+  margin-left:auto;
+  margin-right:30px;
+}
+.banner-photo3 img{
+  float:right;
+  width:300px;
+  height:300px;
+  margin-left:auto;
+  margin-right:30px;
+}
+.banner-text{
+  display:flex;
+  padding-left:30px;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+}
+.banner-text1{
+  width:300px;
+  height:200px;
+  float:left;
   text-align:center;
 }
-.sunset{
+.banner-text2{
+  width:300px;
+  height:200px;
+  float:left;
+  text-align:center;
+}
+.banner-text3{
+  width:300px;
+  height:200px;
+  float:left;
+  text-align:center;
+}
+.section2-title{
 
+  text-align:center;
+}
+.sunset-wrap{
   margin:200px;
 }
 
-.sunset1{
-
-}
 .sunset1-image{
 
   float:left;
@@ -165,9 +197,7 @@ header{
   margin-left:10px;
 
 }
-.sunset2{
 
-}
 .sunset2-image{
   float:right;
   width:800px;
@@ -178,41 +208,58 @@ header{
   float:left;
 }
 
+
 .sunset-wrap-bottom{
-
-
+  display:flex;
+  padding-left:30px;
+  justify-content:space-around;
   align-items:center;
-}
-.sunset-wrap-inner{
-
-  align-items:center;
-  text-align:center;
+  width:100%;
   list-style-type:none;
 }
 .sunset3-image{
   float:left;
   width:300px;
   height:300px;
-}
-.sunset3-text{
-
-  text-align:center;
+  margin-left:auto;
+  margin-right:30px;
 }
 .sunset4-image{
+  float:left;
+  width:300px;
+  height:300px;
+  margin-left:auto;
+}
+.sunset5-image{
   float:right;
   width:300px;
   height:300px;
+  margin-left:30px;
+  margin-right:auto;
 }
-.sunset4-text{
+.sunset-text{
+  display:flex;
+  padding-left:30px;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+}
+.sunset-text3{
+  width:300px;
+  height:200px;
+  float:left;
   text-align:center;
 }
-.sunset5-image{
-
+.sunset-text4{
   width:300px;
-  height:300px;
+  height:200px;
+  float:left;
+  text-align:center;
 }
-
-.sunset5-text{
+.sunset-text5{
+  width:300px;
+  height:200px;
+  float:right;
   text-align:center;
 }
 
