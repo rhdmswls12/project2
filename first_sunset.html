@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>신창 풍차 해안도</title>
+    <link rel="stylesheet" href="first_sunset_style.css">
+  </head>
+  <body>
+    <div class="slide-container">
+
+    <!--images with number-->
+    <div class="mySlides fade">
+      <div class="numbertext">1/3</div>
+      <img src="first_sunset1">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2/3</div>
+      <img src="first_sunset2">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3/3</div>
+      <img src="first_sunset3">
+    </div>
+
+    <!--next and previous buttons-->
+    <a clss="prev" onclick="moveSlides(-1)">&#10094;</a>
+    <a class="next" onclick="movesSlides(1)">&#10095;</a>
+
+    </div>
+    <!--circles button-->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <script>
+      var slideIndex=0;
+      //html 끝난 후 동작
+      window.onload=function(){
+        showSlides(slideIndex);
+
+        // Auto Move Slide
+  var sec = 3000;
+  setInterval(function(){
+    slideIndex++;
+    showSlides(slideIndex);
+
+  }, sec);
+      }
+
+      //next/previous controls
+      function moveSlides(n){
+        slideIndex=slideIndex+n;
+        showSlides(slideIndex);
+      }
+      //thumbnail image controls
+      function currentSlide(n){
+        slideIndex=n;
+        showSlides(slideIndex);
+      }
+      function showSlides(n){
+        var slides=document.getElementsByClassName("mySlides");
+        var dots=document.getElementsByClassName("dot");
+        var size=slides.length;
+
+        if((n+1)>size){
+          slideIndex=0;
+          n=0;
+        }else if(n<0){
+          slideIndex=(size-1);
+          n=(size-1);
+        }
+        for(i=0;i<slides.length;i++){
+          slides[i].style.display="none";
+        }
+        for(i=0;i<dots.length;i++){
+          dots[i].className=dots[i].className.replace(" active","");
+        }
+        slides[n].style.display="block";
+        dots[n].className+=" active";
+      }
+    </script>
+  </body>
+</html>
