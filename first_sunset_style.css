@@ -1,61 +1,39 @@
 *{
   box-sizing:border-box;
 }
+.tag{
+  text-align:center;
+  color:#666666;
+  font-weight: 700;
+  margin:20px;
+}
+h3{
+  text-align:center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.fade:hover{
+  filter:brightness(70%);
+}
+h2,p{
+  text-align:center;
+}
 .slide-container{
   position:relative;
 }
 .slide-container .mySlides img{
+  margin-bottom:10px;
   vertical-align:middle;
   width:700px;
   height:500px;
 }
 /*hide the images by default*/
 .mySlides{
+  text-align:center;
   display:none;
-}
-/*next & previous buttons */
-.prev{
-  cursor:pointer;
-  position:absolute;
-  top:50%;
-  width:auto;
-  margin-top:-22px;
-  padding:16px;
-  color:white;
-  font-weight:bold;
-  font-size:18px;
-  transition:0.3s ease;
-  border-radius:0 3px 3px 0;
-  user-select:none;
-  left:0;
-  border-radius: 3px 0 0 3px;
-  -webkit-user-select: none;
-}
-.next{
-  cursor:pointer;
-  position:absolute;
-  top:50%;
-  width:auto;
-  margin-top:-22px;
-  padding:16px;
-  color:white;
-  font-weight:bold;
-  font-size:18px;
-  transition:0.3s ease;
-  border-radius:0 3px 3px 0;
-  user-select:none;
-  right:0;
-  border-radius: 3px 0 0 3px;
-  -webkit-user-select: none;
-}
-/*position the "next button" to the right*/
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover{
-  background-color:rgba(0,0,0,0.8);
-}
-.next:hover{
-  background-color:rgba(0,0,0,0.8);
 }
 
 .numbertext{
@@ -63,6 +41,7 @@
   font-size:12px;
   padding:8px 12px;
   position:absolute;
+  left:27%;
   top:0;
 }
 /*dots*/
