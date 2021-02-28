@@ -4,9 +4,9 @@ hgroup{
   padding-top:10px;
 }
 body{
-  background:#282828;
+  background:white;
   margin:0;
-  color:white;
+  color:#333333;
 }
 #more{
   width:100px;
@@ -99,6 +99,7 @@ body{
 }
 
 .nav-container{
+  background-color:#282828;
   display:flex;
   justify-content:space-around;/*앞, 뒤, 요소들 사이에 여유공간*/
   /*flex-direction:row;*/
@@ -233,8 +234,11 @@ header{
   margin-bottom:35px;
 }
 .sunset1-text{
-
   text-align:center;
+}
+.sunset1-text h3{
+  margin-top:50px;
+  margin-bottom:60px;
 }
 
 .sunset2-image{
@@ -246,6 +250,10 @@ header{
 .sunset2-text{
   float:left;
   text-align:center;
+}
+.sunset2-text h3{
+  margin-top:50px;
+  margin-bottom:60px;
 }
 
 .sunset-wrap-bottom{
@@ -299,7 +307,13 @@ header{
   float:right;
   text-align:center;
 }
-
+.jeju-map{
+  display:inline;
+}
+.map{
+  text-align:center;
+  left:20%;
+}
 
 .quick-menu{
   display:flex;
@@ -319,6 +333,7 @@ header{
   background-color:#2C323A;
 }
 .footer-bottom{
+  color:white;
   text-align:center;
   background-color:#2C323A;
 }
