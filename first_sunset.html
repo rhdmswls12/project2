@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title>신창 풍차 해안도로</title>
     <link rel="stylesheet" href="first_sunset_style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+    <script type="text/javascript">$(function() {
+    $('.map').maphilight();
+    });
+    </script>
   </head>
   <body>
     <h3>신창 풍차 해안도로</h3>
@@ -81,10 +87,10 @@
     <hr>
     <h2>지도</h2>
     <div class="jeju-map">
-    <img src="jejumap.jpg" usemap="#image-map">
+    <img class="map" src="jejumap.jpg" usemap="#image-map">
 
     <map name="image-map">
-      <area class="map-hover" target="_self" alt="한경면 이동" title="한경면 이동" href="한경면 링크" coords="167,346,182,340,215,363,215,351,245,337,255,319,241,299,211,299,195,279,179,290,173,303,163,313" shape="poly">
+      <area target="_self" alt="한경면 이동" title="한경면 이동" href="한경면 링크" coords="167,346,182,340,215,363,215,351,245,337,255,319,241,299,211,299,195,279,179,290,173,303,163,313" shape="poly">
       <area target="_self" alt="조천읍 이동" title="조천읍 이동" href="조천읍 링크" coords="507,262,529,255,537,250,545,253,587,231,580,219,583,203,584,186,588,158,575,145,565,132,567,115,547,111,539,121,526,109,517,124,490,129,485,141,499,150,502,165,515,187,518,202,519,222,497,251" shape="poly">
       <area target="_self" alt="한림읍 이동" title="한림읍 이동" href="한림읍 링크" coords="256,319,271,315,276,317,284,302,312,300,275,273,275,262,258,248,259,216,247,220,239,221,239,239,219,261,208,262,204,271,196,276,210,298,239,300" shape="poly">
       <area target="_self" alt="제주시 이동" title="제주시 이동" href="제주시 링크" coords="400,260,432,232,443,233,457,228,495,251,517,221,514,190,499,166,498,151,484,142,487,129,479,137,462,135,442,140,411,143,391,151,390,157,358,167,348,171,348,183,356,185,368,184,371,215,370,238,379,255,391,263" shape="poly">
