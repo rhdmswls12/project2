@@ -78,3 +78,9 @@ h2,p{
   from {opacity: .4}
   to {opacity: 1}
 }
+.jeju-map{
+  text-align:center;
+}
+.map-hover:hover img{
+  filter:brightness(70%);
+}
