@@ -8,31 +8,46 @@ body{
   margin:0;
   color:#333333;
 }
-#more{
-  width:100px;
-  height:50px;
-  padding-right:30px;
-  text-align:center;
-  color:'#fff';
-  font-size: 18px;
-  font-weight: 700;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  opacity:0;
-  transform:translate(-50%,-50%);
+.section1 .banner-photo .img_wrap {
+    position: relative;
+    width : 300px;
+    height : 300px;
 }
-.banner-photo1>a:hover{
-  filter:brightness(50%);
+
+/* 20201123//(Ina)추가(s) */
+.section1 .banner-photo a {
+    width:100%;
+    height:100%;
 }
-.banner-photo1>a:hover #more{
-  opacity:1;
+/* 20201123//(Ina)추가(e) */
+
+.section1 .banner-photo a .img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0;
 }
-.banner-photo2>a:hover{
-  filter:brightness(50%);
+
+.section1 .banner-photo a:hover .img_hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
-.banner-photo3>a:hover{
-  filter:brightness(50%);
+
+.section1 .banner-photo .img_wrap .more {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(125%, 550%);
+    opacity: 0;
+}
+
+.section1 .banner-photo a:hover .img_wrap .more {
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 .sunset1>a:hover{
   filter:brightness(50%);
@@ -56,12 +71,7 @@ body{
   height:500px;
   overflow:hidden;
 }
-.img-wrap{
-  width:100%;
-  height:500px;
-  position:absolute;
-  overflow:hidden;
-}
+
 /*롤링 이미지 UL*/
 .rollimgs{
   list-style:none;
@@ -164,7 +174,7 @@ header{
   position:relative;
   text-align:center;
   text-decoration:none;
-  color:white;
+  color:black;
 }
 
 
@@ -175,23 +185,10 @@ header{
   width:100%;
 }
 
-.banner-photo1 img{
+.banner-photo img{
   float:left;
   width:300px;
   height:300px;
-
-}
-.banner-photo2 img{
-  float:left;
-  width:300px;
-  height:300px;
-
-}
-.banner-photo3 img{
-  float:right;
-  width:300px;
-  height:300px;
-
 }
 .banner-text{
   display:flex;

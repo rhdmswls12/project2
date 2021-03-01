@@ -4,12 +4,7 @@
     <meta charset="utf-8">
     <title>제주여행 웹페이지</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
-    <script type="text/javascript">$(function() {
-    $('.map').maphilight();
-    });
-    </script>
+    <script type="text/javascript"src="main.js"></script>
   </head>
   <body>
     <!--전체를 감싸는 태그-->
@@ -21,9 +16,6 @@
         <h5 class="master-description">제주 비공식 여행 웹사이트</h5>
       </hgroup>
       </header>
-
-
-
     <!--banner-->
     <div class="wrap-center">
       <div class="container">
@@ -36,61 +28,6 @@
         </div>
       </div>
     </div>
-
-
-
-    <script>
-    let banner = {
-    rollId: null,
-    interval: 2000,
-
-    //롤링 배너 초기화
-    rollInit: function (newinterval) {
-        if(parseInt(newinterval) > 0){
-            this.interval = newinterval;
-        }
-        //현재 배너
-        let firstitem = document.querySelector('.rollimgs li');
-        if(firstitem){
-            firstitem.classList.add('currentroll');
-        }
-        //다음 배너
-        let seconditem = document.querySelectorAll('.rollimgs li')[1];
-        if(seconditem){
-            seconditem.classList.add('nextroll');
-        }
-        //이전 배너
-        document.querySelector('.rollimgs li:last-child').classList.add('prevroll');
-        this.rollId = setInterval(this.rollNext, this.interval);//롤링 인터벌 호출
-    },
-
-    //다음 배너 롤링
-    rollNext: function () {
-        if(document.querySelector('.prevroll')){
-            document.querySelector('.prevroll').classList.remove('prevroll');
-        }
-        if(document.querySelector('.currentroll')){
-            document.querySelector('.currentroll').classList.add('prevroll');
-            document.querySelector('.currentroll').classList.remove('currentroll');
-        }
-        if(document.querySelector('.nextroll')){
-            document.querySelector('.nextroll').classList.add('currentroll');
-            document.querySelector('.nextroll').classList.remove('nextroll');
-        }
-    //다음 이미지 있으면 다음 롤링 이미지로 선택, 없으면 첫번째 이미지를 롤링 이미지로 지정
-        if(document.querySelector('.currentroll').nextElementSibling){
-            document.querySelector('.currentroll').nextElementSibling.classList.add('nextroll');
-        }else{
-            document.querySelector('.rollimgs li').classList.add('nextroll');
-        }
-      }
-    }
-    document.addEventListener('DOMContentLoaded', function(){
-    banner.rollInit(4000); // 배너 롤링
-    });
-    </script>
-
-
 
     <!--2.navigation-->
     <nav id="main-navigation">
@@ -111,43 +48,41 @@
         <div class="section1-wrap">
             <div class="banner-title">
              <ul class="section1-inner">
-               <li class="section1-inner"><a href="" onclick="toggleImg1()">남쪽 끝 </a></li>
-               <li class="section1-inner"><a href="" onclick="toggleImg2()">제주의 정취</a></li>
-               <li class="section1-inner"><a href="" onclick="toggleImg3()">감성여행</a></li>
+               <li class="section1-inner"><a href="javascript:void(0)" onclick="toggleImg1()">남쪽 끝 </a></li>
+               <li class="section1-inner"><a href="javascript:void(0)" onclick="toggleImg2()">제주의 정취</a></li>
+               <li class="section1-inner"><a href="javascript:void(0)" onclick="toggleImg3()">감성여행</a></li>
              </ul>
             </div>
 
-            <script>
-              function toggleImg1(){
-                document.getElementById("img").src="flower1.jpg";
-                document.getElementById("img").src="flower2.jpg";
-                document.getElementById("img").src="flower3.jpg";
-              }
-              function toggleImg2(){
-                document.getElementById("img").src="jeju1.jpg";
-                document.getElementById("img").src="jeju2.jpg";
-                document.getElementById("img").src="jeju3.jpg";
-              }
-              function toggleImg3(){
-                document.getElementById("img").src="flower1.jpg";
-                document.getElementById("img").src="flower2.jpg";
-                document.getElementById("img").src="flower3.jpg";
-              }
-              </script>
-
-            <div class="banner-photo-container">
-              <div class="banner-photo1">
+            <div class="banner-photo-container section1">
+              <div class="banner-photo">
                 <a href="">
-                  <img id="img" src="flower1.jpg" title="페이지 이동"></img>
-                  <p id="more">자세히 보기</p>
-              </a>
+                  <div class = "img_wrap">
+                    <img id="img1" src="flower1.jpg" title="페이지 이동"></img>
+                    <div class = "img_hover">
+                      <p class="more">자세히 보기</p>
+                    </div>
+                  </div>
+                </a>
               </div>
-              <p id="more">자세히 보기</p>
-              <div class="banner-photo2">
-                <a href=""><img id="img" src="flower2.jpg" title="페이지 이동"></img></a>
-              </div>
-              <div class="banner-photo3">
-                <a href=""><img id="img" src="flower3.jpg" title="페이지 이동"></img></a>
+              <div class="banner-photo">
+                <a href="">
+                  <div class = "img_wrap">
+                    <img id ="img2" src="flower2.jpg" title="페이지 이동"></img>
+                    <div class = "img_hover">
+                      <p class="more">자세히 보기</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="banner-photo">
+                <a href="">
+                  <div class = "img_wrap">
+                    <img id ="img3" src="flower3.jpg" title="페이지 이동"></img>
+                    <div class = "img_hover">
+                      <p class="more">자세히 보기</p>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -249,7 +184,13 @@
         </p>
       </div>
     </footer>
-
   </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+  <script>
+  $(function() {
+  $('.map').maphilight();
+  });
+  </script>
   </body>
 </html>
