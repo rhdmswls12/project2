@@ -58,7 +58,15 @@ function toggleImg2(){
   document.getElementById("img3").src="jeju3.jpg";
 }
 function toggleImg3(){
-  document.getElementById("img1").src="flower1.jpg";
-  document.getElementById("img2").src="flower2.jpg";
-  document.getElementById("img3").src="flower3.jpg";
+  document.getElementById("img1").src="emo1.jpg";
+  document.getElementById("img2").src="emo2.jpg";
+  document.getElementById("img3").src="emo3.jpg";
+}
+function toggletext2(){
+  document.getElementById("title1").value='돌';
+  document.getElementById("content1").value='돌이다';
+  document.getElementById("title2").value="매화꽃";
+  document.getElementById("content2").value="매화꽃이다";
+  document.getElementById("title3").value="벚꽃";
+  document.getElementById("content3").value="벚꽃이";
 }

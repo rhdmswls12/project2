@@ -48,16 +48,16 @@
         <div class="section1-wrap">
             <div class="banner-title">
              <ul class="section1-inner">
-               <li class="section1-inner"><a href="javascript:void(0)" onclick="toggleImg1()">남쪽 끝 </a></li>
-               <li class="section1-inner"><a href="javascript:void(0)" onclick="toggleImg2()">제주의 정취</a></li>
-               <li class="section1-inner"><a href="javascript:void(0)" onclick="toggleImg3()">감성여행</a></li>
+               <li class="section1-inner"><a href="javascript:void(0)" onclick="javascript:toggleImg1();toggletext1();"><p>남쪽 끝</p> </a></li>
+               <li class="section1-inner"><a href="javascript:void(0)" onclick="javascript:toggleImg2();toggletext2();"><p>제주의 정취</p></a></li>
+               <li class="section1-inner"><a href="javascript:void(0)" onclick="javascript:toggleImg3();toggletext3();"><p>감성여행</p></a></li>
              </ul>
             </div>
 
             <div class="banner-photo-container section1">
               <div class="banner-photo">
                 <a href="">
-                  <div class = "img_wrap">
+                  <div class = "img_wrap1">
                     <img id="img1" src="flower1.jpg" title="페이지 이동"></img>
                     <div class = "img_hover">
                       <p class="more">자세히 보기</p>
@@ -67,7 +67,7 @@
               </div>
               <div class="banner-photo">
                 <a href="">
-                  <div class = "img_wrap">
+                  <div class = "img_wrap1">
                     <img id ="img2" src="flower2.jpg" title="페이지 이동"></img>
                     <div class = "img_hover">
                       <p class="more">자세히 보기</p>
@@ -76,7 +76,7 @@
                 </a>
               </div><div class="banner-photo">
                 <a href="">
-                  <div class = "img_wrap">
+                  <div class = "img_wrap1">
                     <img id ="img3" src="flower3.jpg" title="페이지 이동"></img>
                     <div class = "img_hover">
                       <p class="more">자세히 보기</p>
@@ -88,16 +88,16 @@
 
               <div class="banner-text">
               <div class="banner-text1">
-                <h3>유채꽃</h3>
-                <p>유채꽃이다</p>
+                <h3 id="title1">유채꽃</h3>
+                <p id="content1">유채꽃이다</p>
               </div>
               <div class="banner-text2">
-                <h3>매화꽃</h3>
-                <p>매화꽃이다</p>
+                <h3 id="title2">매화꽃</h3>
+                <p id="content2">매화꽃이다</p>
               </div>
               <div class="banner-text3">
-                <h3>벚꽃</h3>
-                <p>벚꽃이다</p>
+                <h3 id="title3">벚꽃</h3>
+                <p id="content3">벚꽃이다</p>
               </div>
             </div>
         </div>
@@ -109,28 +109,58 @@
           <div class="sunset-wrap">
             <div class="sunset-wrap-top">
               <div class="sunset1">
-                <a href="first_sunset.html"><img class="sunset1-image" src="sunset1.jpg" title="페이지 이동"></img></a>
-              <div class="sunset1-text">
-                <h3>신창 풍차 해안도로</h3>
-                <h4>길게 늘어선 풍차가 아름다운 드라이브 명소</h4>
-              </div>
+                <a href="first_sunset.html">
+                  <div class="img_wrap2">
+                    <img class="sunset1-image" src="sunset1.jpg" title="페이지 이동">
+                    <div class = "img_hover2">
+                      <p class="more">자세히 보기</p>
+                    </div>
+                  </div>
+                </a>
               </div>
              <div class="sunset2">
-               <a href="second_sunset.html"><img class="sunset2-image" src="sunset2.jpg" title="페이지 이동"></img></a>
-               <div class="sunset2-text">
-                 <h3>닭머르 해안길</h3>
-                 <h4>제주의 올레길과 노을을 함께 즐길 수 있는 해안길</h4>
-               </div>
+               <a href="second_sunset.html">
+                 <img class="sunset2-image" src="sunset2.jpg" title="페이지 이동">
+               </a>
+             </div>
+
+
+             <div class="sunset-text-container">
+             <div class="sunset1-text">
+               <h3>신창 풍차 해안도로</h3>
+               <h4>길게 늘어선 풍차가 아름다운 드라이브 명소</h4>
+             </div>
+             <div class="sunset2-text">
+               <h3>닭머르 해안길</h3>
+               <h4>제주의 올레길과 노을을 함께 즐길 수 있는 해안길</h4>
              </div>
            </div>
-
-
+          </div>
+          <div class="section3">
+          <div class="sunset-bottom-photo">
             <ul class="sunset-wrap-bottom">
-              <li><a href=""><img class="sunset3-image" src="sunset3.jpg" title="페이지 이동"></img></a></li>
-              <li><a href=""><img class="sunset4-image" src="sunset4.jpg" title="페이지 이동"></img></a></li>
-              <li><a href=""><img class="sunset5-image" src="sunset5.jpg" title="페이지 이동"></img></a></li>
+              <li>
+                <a href="">
+                  <div class="img_wrap3">
+                  <img class="sunset3-image" src="sunset3.jpg" title="페이지 이동">
+                  <div class="img_hover3">
+                    <p class="more">자세히 보기</p>
+                  </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""><img class="sunset4-image" src="sunset4.jpg" title="페이지 이동">
+                </a>
+              </li>
+              <li>
+                <a href=""><img class="sunset5-image" src="sunset5.jpg" title="페이지 이동">
+                </a>
+              </li>
             </ul>
+          </div>
             <div>
+            </div>
 
             <div class="sunset-text">
               <div class="sunset-text3">
@@ -146,7 +176,9 @@
                 <h4>제주의 서쪽 끝에 위치한 노을 맛집 오름</h4>
               </div>
             </div>
-            </div>
+          </div>
+          </div>
+
           </div>
 
 

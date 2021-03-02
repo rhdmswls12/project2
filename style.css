@@ -8,62 +8,6 @@ body{
   margin:0;
   color:#333333;
 }
-.section1 .banner-photo .img_wrap {
-    position: relative;
-    width : 300px;
-    height : 300px;
-}
-
-/* 20201123//(Ina)추가(s) */
-.section1 .banner-photo a {
-    width:100%;
-    height:100%;
-}
-/* 20201123//(Ina)추가(e) */
-
-.section1 .banner-photo a .img_hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #222;
-    opacity: 0;
-}
-
-.section1 .banner-photo a:hover .img_hover {
-    opacity: 0.8;
-    transition: all 0.3s ease;
-}
-
-.section1 .banner-photo .img_wrap .more {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    position: absolute;
-    transform: translate(125%, 550%);
-    opacity: 0;
-}
-
-.section1 .banner-photo a:hover .img_wrap .more {
-    opacity: 1;
-    transition: all 0.3s ease;
-}
-.sunset1>a:hover{
-  filter:brightness(50%);
-}
-.sunset2>a:hover{
-  filter:brightness(50%);
-}
-.sunset3-image:hover{
-  filter:brightness(50%);
-}
-.sunset4-image:hover{
-  filter:brightness(50%);
-}
-.sunset5-image:hover{
-  filter:brightness(50%);
-}
 
 .container{
   margin:0 auto;
@@ -71,6 +15,7 @@ body{
   height:500px;
   overflow:hidden;
 }
+
 
 /*롤링 이미지 UL*/
 .rollimgs{
@@ -190,6 +135,101 @@ header{
   width:300px;
   height:300px;
 }
+
+.section1 .banner-photo .img_wrap1 {
+    position: relative;
+    width : 300px;
+    height : 300px;
+}
+
+.section1 .banner-photo a {
+    width:100%;
+    height:100%;
+}
+
+
+.section1 .banner-photo a .img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0;
+}
+
+.section1 .banner-photo a:hover .img_hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.section1 .banner-photo .img_wrap1 .more {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(125%, 550%);
+    opacity: 0;
+}
+
+.section1 .banner-photo a:hover .img_wrap1 .more {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+
+
+.sunset-wrap.sunset-wrap-top.sunset1.img_wrap2 {
+    position: relative;
+    width : 800px;
+    height : 400px;
+}
+.sunset-wrap.sunset-wrap-top.sunset1 a {
+    width:100%;
+    height:100%;
+}
+.sunset-wrap.sunset-wrap-top.sunset1 a .img_hover2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0;
+}
+.sunset-wrap.sunset-wrap-top.sunset1 a:hover .img_hover2 {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+.sunset-wrap.sunset-wrap-top.sunset1.img_wrap2 .more {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(125%, 550%);
+    opacity: 0;
+}
+.sunset-wrap.sunset-wrap-top.sunset1 a:hover .img_wrap2 .more {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+/*
+.sunset1>a:hover{
+  filter:brightness(50%);
+}
+.sunset2>a:hover{
+  filter:brightness(50%);
+}
+.sunset3-image:hover{
+  filter:brightness(50%);
+}
+.sunset4-image:hover{
+  filter:brightness(50%);
+}
+.sunset5-image:hover{
+  filter:brightness(50%);
+}
+*/
 .banner-text{
   display:flex;
   justify-content:space-around;
@@ -304,6 +344,49 @@ header{
   float:right;
   text-align:center;
 }
+
+.section3 .sunset-bottom-photo.sunset-wrap-bottom.img_wrap3 {
+    position: relative;
+    width : 300px;
+    height : 300px;
+}
+
+.section3 .sunset-bottom-photo.sunset-wrap-bottom a {
+    width:100%;
+    height:100%;
+}
+
+
+.section3 .sunset-bottom-photo.sunset-wrap-bottom a .img_hover3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0;
+}
+
+.section3 .sunset-bottom-photo.sunset-wrap-bottom a:hover .img_hover3 {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.section3 .sunset-bottom-photo.sunset-wrap-bottom .img_wrap3 .more {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(125%, 550%);
+    opacity: 0;
+}
+
+.section3 .sunset-bottom-photo.sunset-wrap-bottom a:hover .img_wrap3 .more {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+
 .jeju-map{
   display:inline;
 }
