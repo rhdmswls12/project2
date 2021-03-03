@@ -62,11 +62,27 @@ function toggleImg3(){
   document.getElementById("img2").src="emo2.jpg";
   document.getElementById("img3").src="emo3.jpg";
 }
+function toggletext1(){
+  document.getElementById("title1").innerHTML='유채꽃';
+  document.getElementById("content1").innerHTML='유채꽃이다';
+  document.getElementById("title2").innerHTML="매화꽃";
+  document.getElementById("content2").innerHTML="매화꽃이다";
+  document.getElementById("title3").innerHTML="벚꽃";
+  document.getElementById("content3").innerHTML="벚꽃이다";
+}
 function toggletext2(){
-  document.getElementById("title1").value='돌';
-  document.getElementById("content1").value='돌이다';
-  document.getElementById("title2").value="매화꽃";
-  document.getElementById("content2").value="매화꽃이다";
-  document.getElementById("title3").value="벚꽃";
-  document.getElementById("content3").value="벚꽃이";
+  document.getElementById("title1").innerHTML='돌';
+  document.getElementById("content1").innerHTML='돌이다';
+  document.getElementById("title2").innerHTML="바다";
+  document.getElementById("content2").innerHTML="바다다";
+  document.getElementById("title3").innerHTML="시장";
+  document.getElementById("content3").innerHTML="시장이다";
+}
+function toggletext3(){
+  document.getElementById("title1").innerHTML='게스트 하우스';
+  document.getElementById("content1").innerHTML='한달살이';
+  document.getElementById("title2").innerHTML="자전거";
+  document.getElementById("content2").innerHTML="자전거 여행";
+  document.getElementById("title3").innerHTML="해안도로";
+  document.getElementById("content3").innerHTML="해안도로 드라이브";
 }
