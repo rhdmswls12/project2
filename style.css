@@ -91,7 +91,7 @@ header{
   margin-top:80px;
 }
 .section1-title {
-  margin-top:30px;
+  margin-top:60px;
   margin-bottom:30px;
   text-align:center;
 }
@@ -107,7 +107,14 @@ header{
   text-align:center;
   width:100%;
 }
+
+
+
+
+
+
 .section1-inner{
+  display:flex;
   float:left;
   padding-left:20px;
   padding-right:20px;
@@ -115,13 +122,31 @@ header{
   list-style-type:none;
 
 }
+.section1-inner{
+  cursor:pointer;
+}
 .section1-inner a{
   position:relative;
   text-align:center;
   text-decoration:none;
+  font-weight:800;
   color:black;
+  padding-bottom:0;
 }
-
+.section1-inner a::after{
+  content: "";
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:0;
+  height:2.5px;
+  background:#54916d;
+  transition:all .5s ease-out;
+}
+.section1-inner a:hover::after{
+  width:100%;
+}
 
 .banner-photo-container{
   display:flex;
@@ -136,7 +161,7 @@ header{
   height:300px;
 }
 
-.section1 .banner-photo .img_wrap1 {
+.section1 .banner-photo .img-wrap1 {
     position: relative;
     width : 300px;
     height : 300px;
@@ -148,7 +173,7 @@ header{
 }
 
 
-.section1 .banner-photo a .img_hover {
+.section1 .banner-photo a .img-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -158,12 +183,12 @@ header{
     opacity: 0;
 }
 
-.section1 .banner-photo a:hover .img_hover {
+.section1 .banner-photo a:hover .img-hover {
     opacity: 0.8;
     transition: all 0.3s ease;
 }
 
-.section1 .banner-photo .img_wrap1 .more {
+.section1 .banner-photo .img-wrap1 .more {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
@@ -172,23 +197,30 @@ header{
     opacity: 0;
 }
 
-.section1 .banner-photo a:hover .img_wrap1 .more {
+.section1 .banner-photo a:hover .img-wrap1 .more {
     opacity: 1;
     transition: all 0.3s ease;
 }
 
+.sunset-wrap-top{
+  position:relative;
+  margin:0;
+  width:1280px;
+  height:1000px;
+}
 
-
-.sunset-wrap.sunset-wrap-top.sunset1.img_wrap2 {
+.sunset-wrap .sunset-wrap-top .sunset1 .img-wrap2 {
+    margin:30px;
+    float: left;
     position: relative;
     width : 800px;
     height : 400px;
 }
-.sunset-wrap.sunset-wrap-top.sunset1 a {
+.sunset-wrap .sunset-wrap-top .sunset1 a {
     width:100%;
     height:100%;
 }
-.sunset-wrap.sunset-wrap-top.sunset1 a .img_hover2 {
+.sunset-wrap .sunset-wrap-top .sunset1 a .img-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -197,39 +229,62 @@ header{
     background: #222;
     opacity: 0;
 }
-.sunset-wrap.sunset-wrap-top.sunset1 a:hover .img_hover2 {
+.sunset-wrap .sunset-wrap-top .sunset1 a:hover .img-hover {
     opacity: 0.8;
     transition: all 0.3s ease;
 }
-.sunset-wrap.sunset-wrap-top.sunset1.img_wrap2 .more {
+.sunset-wrap .sunset-wrap-top .sunset1 .img-wrap2 .more {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
     position: absolute;
-    transform: translate(125%, 550%);
+    transform: translate(425%, 650%);
     opacity: 0;
 }
-.sunset-wrap.sunset-wrap-top.sunset1 a:hover .img_wrap2 .more {
+.sunset-wrap .sunset-wrap-top .sunset1 a:hover .img-wrap2 .more {
     opacity: 1;
     transition: all 0.3s ease;
 }
-/*
-.sunset1>a:hover{
-  filter:brightness(50%);
+
+
+.sunset-wrap .sunset-wrap-top .sunset2 .img-wrap3 {
+    margin:30px;
+    float: right;
+    position: relative;
+    width : 800px;
+    height : 400px;
 }
-.sunset2>a:hover{
-  filter:brightness(50%);
+.sunset-wrap .sunset-wrap-top .sunset2 a {
+    width:100%;
+    height:100%;
 }
-.sunset3-image:hover{
-  filter:brightness(50%);
+.sunset-wrap .sunset-wrap-top .sunset2 a .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0;
 }
-.sunset4-image:hover{
-  filter:brightness(50%);
+.sunset-wrap .sunset-wrap-top .sunset2 a:hover .img-hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
-.sunset5-image:hover{
-  filter:brightness(50%);
+.sunset-wrap .sunset-wrap-top .sunset2 .img-wrap3 .more {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(425%, 650%);
+    opacity: 0;
 }
-*/
+.sunset-wrap .sunset-wrap-top .sunset2 a:hover .img-wrap3 .more {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+
 .banner-text{
   display:flex;
   justify-content:space-around;
@@ -270,10 +325,13 @@ header{
   height:400px;
   margin-bottom:35px;
 }
-.sunset1-text{
+
+.sunset-text-container .sunset1-text{
+
+  padding-top:90px;
   text-align:center;
 }
-.sunset1-text h3{
+.sunset-text-container .sunset1-text h3{
   margin-top:50px;
   margin-bottom:60px;
 }
@@ -284,11 +342,12 @@ header{
   height:400px;
   margin-bottom:35px;
 }
-.sunset2-text{
+.sunset-text-container .sunset2-text{
   float:left;
+  padding-top:90px;
   text-align:center;
 }
-.sunset2-text h3{
+.sunset-text-container .sunset2-text h3{
   margin-top:50px;
   margin-bottom:60px;
 }
@@ -345,19 +404,21 @@ header{
   text-align:center;
 }
 
-.section3 .sunset-bottom-photo.sunset-wrap-bottom.img_wrap3 {
+
+
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom .img-wrap4 {
     position: relative;
     width : 300px;
     height : 300px;
 }
 
-.section3 .sunset-bottom-photo.sunset-wrap-bottom a {
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a {
     width:100%;
     height:100%;
 }
 
-
-.section3 .sunset-bottom-photo.sunset-wrap-bottom a .img_hover3 {
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a .img-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -367,12 +428,12 @@ header{
     opacity: 0;
 }
 
-.section3 .sunset-bottom-photo.sunset-wrap-bottom a:hover .img_hover3 {
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a:hover .img-hover {
     opacity: 0.8;
     transition: all 0.3s ease;
 }
 
-.section3 .sunset-bottom-photo.sunset-wrap-bottom .img_wrap3 .more {
+.section3 .sunset-bottom-photo .sunset-wrap-bottom .img-wrap4 .more {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
@@ -381,10 +442,101 @@ header{
     opacity: 0;
 }
 
-.section3 .sunset-bottom-photo.sunset-wrap-bottom a:hover .img_wrap3 .more {
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a:hover .img-wrap4 .more {
     opacity: 1;
     transition: all 0.3s ease;
 }
+
+
+
+
+
+
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom .img-wrap5 {
+    position: relative;
+    width : 300px;
+    height : 300px;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a {
+    width:100%;
+    height:100%;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a:hover .img-hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom .img-wrap5 .more {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(125%, 550%);
+    opacity: 0;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a:hover .img-wrap5 .more {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom .img-wrap6 {
+    position: relative;
+    width : 300px;
+    height : 300px;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a {
+    width:100%;
+    height:100%;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a:hover .img-hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom .img-wrap6 .more {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(125%, 550%);
+    opacity: 0;
+}
+
+.section3 .sunset-bottom-photo .sunset-wrap-bottom a:hover .img-wrap6 .more {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
 
 
 .jeju-map{
