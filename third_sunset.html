@@ -2,45 +2,40 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>닭머르 해안길</title>
+    <title>협재 해수욕장</title>
     <link rel="stylesheet" href="first_sunset_style.css">
   </head>
   <body>
-    <h3>닭머르 해안길</h3>
-    <div class="tag">#갈대 #고요한 #낭만적인 #아름다운</div>
+    <h3>협재 해수욕장</h3>
+    <div class="tag">#분위기 #편안한 #바다 #깨끗한</div>
     <hr>
-
     <div class="slide-container">
-
     <!--images with number-->
     <div class="mySlides fade">
       <div class="numbertext">1/3</div>
-      <img src="second_sunset1.jpg">
+      <img src="third_sunset1.jpg">
     </div>
     <div class="mySlides fade">
       <div class="numbertext">2/3</div>
-      <img src="second_sunset2.jpg">
+      <img src="third_sunset2.jpg">
     </div>
     <div class="mySlides fade">
       <div class="numbertext">3/3</div>
-      <img src="second_sunset3.jpg">
+      <img src="third_sunset3.jpg">
     </div>
   </div>
-
     <!--circles button-->
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(0)"></span>
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
     </div>
-
     <script>
       var slideIndex=0;
       //html 끝난 후 동작
       window.onload=function(){
         showSlides(slideIndex);
       }
-
       //next/previous controls
       function moveSlides(n){
         slideIndex=slideIndex+n
@@ -55,7 +50,6 @@
         var slides=document.getElementsByClassName("mySlides");
         var dots=document.getElementsByClassName("dot");
         var size=slides.length;
-
         if((n+1)>size){
           slideIndex=0;
           n=0;
@@ -73,12 +67,11 @@
         dots[n].className+=" active";
       }
     </script>
-    <p>닭머루 입구에서 신촌포구까지의 구간으로 나무데크로 이어진 전망대와 산책로가 있으며, 가을에서 초겨울까지가 닭머르 해안길을 방문하기에 좋다.<br>
-       닭머르 바위는 마치 닭이 흙을 파헤치고 그 안에 들어앉은 모습을 닮았다하여 이름이 붙여졌다.<br>
-      닭머르해안길은 한적하게 산책을 즐기며 사진을 찍기에 제격인 장소다. 일몰 장소로도 손꼽히는 곳으로 일몰 사진을 담기에도 매우 좋다.
+    <p>한림읍 서해안 지대에 위치하며 조개껍질이 많이 섞인 은모래가 펼쳐지는데, 수심이 얕고 경사가 완만하기 때문에 수영 초보자에게도 알맞은 해수욕장이다.<br>
+     각종 시설이 마련되어 있고 전복 ·소라 등 해산물이 많이 잡히며 주위에 송림과 잔디가 있어 캠핑하기에도 적당하다.
     </p>
-    <div class="map" style="text-align:center;margin:30px;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.583786079708!2d126.6106074150504!3d33.53820548074886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350d1d9be49e1b29%3A0xdb773b2bd7253774!2z64ut66i466W0KO2VtOyViOuIhOumrOq4uCk!5e0!3m2!1sko!2skr!4v1614935005779!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="map" style="text-align:center; margin:30px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.111054266161!2d126.23779811504644!3d33.39426678078996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c6100c373b0f1%3A0x6ce2ce2c47a28400!2z7ZiR7J6s7ZW07IiY7JqV7J6l!5e0!3m2!1sko!2skr!4v1614937147974!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </body>
 </html>
