@@ -15,7 +15,7 @@ h3{
   letter-spacing: -1px;
   word-break: keep-all;
 }
-.fade:hover{
+.mySlides img:hover{
   filter:brightness(70%);
 }
 h2,p{
@@ -76,4 +76,27 @@ h2,p{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.quick-menu{
+  display:flex;
+  justify-content:space-around;
+  background-color:#1F2328;
+  list-style:none;
+  align-items:center;
+}
+.quick-menu-item a{
+  float:left;
+  text-decoration:none;
+  text-align:center;
+  justify-content:space-around;
+  color:white;
+}
+.footer-body{
+  background-color:#2C323A;
+}
+.footer-bottom{
+  color:white;
+  text-align:center;
+  background-color:#2C323A;
 }
