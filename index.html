@@ -15,12 +15,13 @@
         <h1 class="master-title">JEJU</h1>
         <h5 class="master-description">제주 비공식 여행 웹사이트</h5>
       </hgroup>
-      </header>
+      <!--
       <div class='weather'>
         <div class='CurrIcon'></div>
         <div class='CurrTemp'></div>
         <div class='City'></div>
       </div>
+      </header>
       <script>
       $(document).ready(function(){
         let weatherIcon={
@@ -51,7 +52,7 @@
         })
       });
       </script>
-
+-->
     <!--banner-->
     <div class="wrap-center">
       <div class="container">
@@ -66,16 +67,98 @@
     </div>
 
     <!--2.navigation-->
-    <nav id="main-navigation">
+  <div class="top-bar con">
+    <nav class="main-navigation">
       <ul class="nav-container">
-        <li class="nav-item"><a href="">소개</a></li>
-        <li class="nav-item"><a href="">제주의 오늘</a></li>
-        <li class="nav-item"><a href="">추천</a></li>
-        <li class="nav-item"><a href="">여행지</a></li>
-        <li class="nav-item"><a href="">지역</a></li>
-        <li class="nav-item"><a href="">비대면 여행 </a></li>
+        <li class="nav-item">
+          <a href="" class="block">소개</a>
+          <div class="relative"><!--서브메뉴를 위한 유령의 집-->
+            <div><!--overflow:hidden때문에 존재-->
+              <ul>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="" class="block">제주의 오늘</a>
+          <div class="relative">
+            <div>
+              <ul>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="" class="block">추천</a>
+          <div class="relative">
+            <div>
+              <ul>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="" class="block">여행지</a>
+          <div class="relative">
+            <div>
+              <ul>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="" class="block">지역</a>
+          <div class="relative">
+            <div>
+              <ul>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="" class="block">비대면 여행</a>
+          <div class="relative">
+            <div>
+              <ul>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+                <li><a class="block" href="#">드롭 메뉴1</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
       </ul>
     </nav>
+    <!--유령의 집, 단순한 기준점, 높이: 항상 0-->
+    <div class="sub-menu-bg relative">
+      <!--서브메뉴배경 레퍼, 존재이유: overflow:hidden, 평소 높이: 0, 활성화 높이: 470px-->
+      <div>
+        <!--서브메뉴배경, 높이:항상 470px, 평소 transform:translateY(-100%),활성화 transform:translateY(0)-->
+        <div></div>
+      </div>
+    </div>
+  </div>
 
     <!--3.main content-->
     <div id="content">
