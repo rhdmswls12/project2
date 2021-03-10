@@ -78,6 +78,149 @@ h2,p{
   to {opacity: 1}
 }
 
+
+
+.slide-wrapper{
+  width:100%;
+  background:#fff;
+  overflow:hidden;
+}
+.slide-wrapper .slide-wrap{
+  margin: 0 auto;
+  position:relative;
+  width:1248px;
+  text-align:center;
+}
+.slide-wrapper .slide-wrap .title{
+  padding:64px 0 50px 0;
+  text-align:center;
+}
+.slide-wrapper .slide-wrap .title p{
+  text-align:center;
+  font:600 30px;
+  color:#000;
+}
+.slide-wrapper .slide-wrap .title span{
+  display:inline-block;
+  text-align:center;
+  padding-top:36px;
+  font:19px/25px;
+  color:#000;
+}
+.slide-wrapper .slide-wrap .buy{
+  display:inline-block;
+  margin-top:30px;
+  padding:0 100px;
+  text-align:center;
+  border:1px solid #000;
+  font:15px/57px;
+  color:#000;
+}
+.slide-wrapper .slide-wrap ul .slider{
+  position:relative;
+  overflow:hidden;
+  height:485px;
+}
+.slide-wrapper .slide-wrap ul li{
+  position:relative;
+  width:1248px;
+  float:left;
+  margin-right:100px;
+  text-align:center;
+}
+.slide-wrapper .slide-wrap .title{
+  padding:76px 0 54px 0;
+  text-align:center;
+}
+.slide-wrapper .slide-wrap .title p{
+  text-transform:uppercase;
+  text-align:center;
+  font:40px/45px;
+  color:#000;
+}
+.slide-wrapper .slide-wrap .title span{
+  font:26px/28px;
+  color:#000;
+}
+.slide-wrapper .slide-wrap ul .slider::after{
+  content:"";
+  display:block;
+  width:0;
+  height:0;
+  clear:both;
+}
+.btn{
+  position:absolute;
+  top:60%;
+  width:100%;
+  text-align:center;
+}
+.btn a{
+  position:absolute;
+  left:50%;
+}
+.btn .next{
+  margin-left:670px;
+}
+.btn .prev{
+  margin-left:-680px;
+}
+.num-wrap{
+  position:relative;
+  width:100%;
+  margin:30px 0 20px 0;
+  height:45px;
+}
+.num-wrap .num{
+  position:absolute;
+  left:0;
+  width:10000px;
+}
+.num-wrap .num .a{
+  position:relative;
+  top:0;
+  width:317px;
+  display:inline-block;
+  text-align:center;
+  vertical-align:middle;
+}
+.num-wrap p{
+  position:relative;
+  display:inline-block;
+  padding:0 0 2px 0;
+  font:26px/26px;
+  text-align:center;
+  color:#c6c6c6;
+  letter-spacing:2px;
+  transition:all 0.3s ease-out;
+}
+.num-wrap span{
+  position:relative;
+  top:20px;
+  margin:20px 0 0 0;
+  font;18px/18px;
+  color:#000;
+  letter-spacing:2px;
+  display:block;
+  text-align:center;
+  opacity:0;
+  transition:all 0.3s ease-out;
+}
+a.on{
+  position:relative;
+  font:22px/30px;
+  overflow:hidden;
+}
+a.on p{
+  color:#000;
+
+}
+a .on span{
+  top:0;
+  opacity:1;
+}
+
+
 .quick-menu{
   display:flex;
   justify-content:space-around;
